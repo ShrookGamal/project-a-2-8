@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المقال - نسر الخليج</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --dark: #111844; --accent: #4B5694; --light: #7288AE; --bg: #fdfbf7; --beige: #EAE0CF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background-color: var(--bg); color: var(--dark); overflow-x: hidden; }
+        .top-nav-detail { background: #fff; padding: 20px 0; border-bottom: 1px solid var(--beige); position: sticky; top: 0; z-index: 100; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .back-link { text-decoration: none; color: var(--accent); font-weight: 900; display: flex; align-items: center; gap: 10px; transition: 0.3s; font-size: 0.9rem; }
+        .back-link:hover { color: var(--dark); transform: translateX(5px); }
+        .article-header { padding: 60px 0; text-align: center; }
+        .post-cat { color: var(--light); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        .post-main-title { font-size: 3rem; font-weight: 900; margin: 20px 0; line-height: 1.2; color: var(--dark); }
+        .main-hero-img { width: 100%; height: 500px; object-fit: cover; border-radius: 40px; box-shadow: 0 30px 60px rgba(17, 24, 68, 0.1); margin-bottom: 50px; }
+        .content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .article-rich-text { font-size: 1.2rem; line-height: 2; color: #333; text-align: justify; }
+        .article-rich-text h2 { margin: 40px 0 20px; color: var(--dark); font-size: 1.8rem; }
+        .article-rich-text ul { margin-bottom: 30px; list-style: none; }
+        .article-rich-text li { position: relative; padding-right: 30px; margin-bottom: 15px; }
+        .article-rich-text li::before { content: '✦'; position: absolute; right: 0; color: var(--light); }
+        .sidebar-sticky { position: sticky; top: 120px; height: fit-content; }
+        .cta-sidebar { background: var(--dark); color: #fff; padding: 40px; border-radius: 30px; text-align: center; }
+        .cta-sidebar h4 { font-size: 1.5rem; margin-bottom: 20px; }
+        .cta-sidebar .phone-btn { background: var(--beige); color: var(--dark); padding: 15px; border-radius: 15px; display: block; text-decoration: none; font-weight: 900; font-size: 1.2rem; transition: 0.3s; }
+        .cta-sidebar .phone-btn:hover { background: #fff; transform: scale(1.05); }
+        .feature-item { background: #fff; padding: 20px; border-radius: 20px; border: 1px solid var(--beige); margin-top: 20px; display: flex; align-items: center; gap: 15px; }
+        .feature-item i { font-size: 1.5rem; color: var(--light); }
+        @media (max-width: 768px) {
+            .post-main-title { font-size: 1.6rem; }
+            .main-hero-img { height: 250px; border-radius: 20px; }
+            .content-grid { grid-template-columns: 1fr; }
+            .article-rich-text { font-size: 1rem; }
+            .top-nav-detail { padding: 15px 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav-detail">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span id="pCat" class="post-cat">تحميل...</span>
+            <h1 id="pTitle" class="post-main-title">تحميل العنوان...</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <img id="pImg" src="" alt="نسر الخليج" class="main-hero-img">
+        <div class="content-grid">
+            <div class="article-rich-text">
+                <div id="pBody"></div>
+            </div>
+            <aside class="sidebar-sticky">
+                <div class="cta-sidebar">
+                    <h4>هل تحتاج لمساعدة فورية؟</h4>
+                    <p style="margin-bottom: 25px; opacity: 0.8; font-size: 0.9rem;">فريق نسر الخليج جاهز لخدمتك في جميع مناطق الكويت 24 ساعة.</p>
+                    <a href="tel:97383527" class="phone-btn">97383527</a>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div><strong>كفالة معتمدة</strong><p style="font-size: 0.8rem;">ضمان شامل على العمل</p></div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <div><strong>وصول سريع</strong><p style="font-size: 0.8rem;">خلال 30 دقيقة فقط</p></div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        const blogData = {
+            1: {
+                cat: "تقنيات حديثة",
+                title: "دليل تسليك المجاري بماكينات الضغط الألماني في الكويت",
+                img: "images/blog2.png",
+                body: `<h2>لماذا نستخدم ضغط الماء والهواء؟</h2><p>تعتبر ماكينات الضغط الألماني التي نستخدمها في نسر الخليج هي الحل الأمثل للتخلص من تراكمات الزيوت والدهون التي تتحول مع الوقت إلى كتل صلبة تسد المجرى تماماً. تعمل هذه التقنية من خلال توجيه تيار مائي فائق القوة يقوم بجلي جدران المواسير من الداخل.</p><h2>مميزات الخدمة:</h2><ul><li>تفتيت كتل الدهون والشحوم دون تكسير.</li><li>تنظيف خطوط المجاري الرئيسية والفرعية بفاعلية 100%.</li><li>إزالة الروائح الكريهة الناتجة عن الرواسب القديمة.</li></ul><p>نحن في نسر الخليج نغطي جميع مناطق الكويت (حولي، الأحمدي، الفروانية، الجهراء) ونوفر فرق عمل متخصصة في التعامل مع أصعب الانسدادات في المطابخ المركزية والمجمعات التجارية.</p>`
+            },
+            2: {
+                cat: "وقاية وصيانة",
+                title: "تنظيف وسحب الجورة: الطريقة الصحيحة لحماية منزلك",
+                img: "images/blog2.png",
+                body: `<h2>ما هي الجورة وكيف نحميها؟</h2><p>الجورة هي مجمع مياه الصرف في السرداب، وإهمال تنظيفها يؤدي إلى فيضان المياه تحت أساسات المنزل. نحن في نسر الخليج نوفر أحدث تناكر سحب الجورة القوية التي تقوم بتفريغ المحتوى بالكامل.</p><h2>خطوات العمل لدينا:</h2><ul><li>سحب مياه الجورة بالكامل باستخدام تناكر حديثة.</li><li>تنظيف قاع الجورة من الأطيان والرواسب الصلبة.</li><li>تعقيم الجورة بمواد قوية لمنع الحشرات والروائح.</li></ul><p>ننصح عملائنا في الكويت بجدولة عملية سحب الجورة مرة كل 6 أشهر لضمان عدم حدوث أي مفاجآت غير سارة في السرداب.</p>`
+            },
+            3: {
+                cat: "تكنولوجيا المضخات",
+                title: "أهمية تبديل وصيانة مكينة السرداب قبل موسم الشتاء",
+                img: "images/blog3.png",
+                body: `<h2>مكينة السرداب: صمام الأمان</h2><p>في الكويت، تزداد أهمية مكينة السرداب (المضخة الغاطسة) خاصة مع موسم الأمطار. توقف هذه الماكينة عن العمل يعني غرق السرداب بالكامل في دقائق. نحن في نسر الخليج متخصصون في تركيب أفضل الأنواع الإيطالية.</p><h2>لماذا تختار مضخاتنا؟</h2><ul><li>محركات قوية تتحمل العمل المستمر تحت ضغط عالي.</li><li>عوامات كهربائية دقيقة تضمن التشغيل التلقائي.</li><li>كفالة سنة كاملة ضد عيوب التصنيع.</li></ul><p>اتصل بنا الآن لفحص مكينة السرداب الحالية لديك والتأكد من سلامة التمديدات الكهربائية لضمان شتاء آمن وبدون مشاكل.</p>`
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const post = blogData[params.get('id')];
+
+        if (post) {
+            document.getElementById('pCat').innerText = post.cat;
+            document.getElementById('pTitle').innerText = post.title;
+            document.getElementById('pImg').src = post.img;
+            document.getElementById('pBody').innerHTML = post.body;
+            document.title = post.title;
+        } else {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
