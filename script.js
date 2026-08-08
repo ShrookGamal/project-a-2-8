@@ -139,3 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     whyItems.forEach(el => whyObserver.observe(el));
 });
+document.body.classList.add('loading');
+
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    setTimeout(() => {
+        splash.classList.add('splash-hidden');
+        document.body.classList.remove('loading');
+    }, 2000);
+});
